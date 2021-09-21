@@ -19,9 +19,9 @@ function setTableVal(arr) {
   let tab = document.getElementById("tb");
   for (let i in arr) {
     let row = document.createElement("tr");
-    for (let j in i) {
+    for (let j in arr[i]) {
       let col = document.createElement("td");
-      let text = document.createTextNode(i[j]);
+      let text = document.createTextNode(arr[i][j]);
       col.appendChild(text);
       row.appendChild(col);
     }
